@@ -2,7 +2,7 @@
 using Microsoft.WindowsAzure.MobileServices;
 using Newtonsoft.Json;
 
-namespace XamarinDiplomado
+namespace XamarinDiplomado.Models
 {
 	[DataTable("TodoItem")]
 	public class ToDoItem
@@ -15,6 +15,9 @@ namespace XamarinDiplomado
 
 		[JsonProperty("Descripcion")]
 		public string Descripcion { get; set; }
+
+		[JsonProperty("Hecho")]
+		public bool Hecho { get; set;}
 
 		[Version]
 		public string Version { get; set;}
